@@ -115,6 +115,13 @@ div a {
   width: 100%;
 }
 
+@media only screen and (max-width: 800px) {
+  body {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .col-s-1 {
