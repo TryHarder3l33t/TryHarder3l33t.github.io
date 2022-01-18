@@ -5,15 +5,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- From the w3 schools column example I used sets the initial zoom to 1 so you dont have a zooooomed out page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
+    <!-- My Stylesheet rel is the relationship you can have author help document etc. -->
     <link rel="stylesheet" href="style.css" />
+    <!-- For my fancy google font Mea Culpa https://fonts.google.com/specimen/Mea+Culpa this stuff is in the link they have you post in the head -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome is the little icons etc you use on a site maybe a house for home a magnifying glass for the search.. you get the idea. Example put this in your head and then for the home icon <i class="fas fa-home"></i> -->
     <script
       src="https://kit.fontawesome.com/7efb34a456.js"
       crossorigin="anonymous"
@@ -37,6 +41,7 @@
     </div>
     <div class="col-12 paddingtb0">
       <div class="col-4 paddingtb0">
+        <!-- Look at the script below used for a live date -->
         <ul id="date-stuff">
           <li><h5 id="today"></h5></li>
           <li><p>Today's Paper</p></li>
@@ -215,11 +220,15 @@
     </div>
   </body>
   <script>
+    // Listen for the window to load
     window.addEventListener("DOMContentLoaded", (event) => {
       console.log("DOM fully loaded and parsed");
+      // Date object put into the today variable I am surprised it works i didnt use let or const I will ask the leaders about this
       today = new Date();
       day = today.toDateString();
+      // Find the today id and put the day varible in the inner HTML.
       document.getElementById("today").innerHTML = day;
+      // An attempt to use random placeholder data with IMAGES since most dont have images. This one uses wikipedias images which are free to steal I mean USE. I was stopped because of Cross Origin Resource badness. I know if you use React you can get around it but here I can't
       fetch("https://schematic-ipsum.herokuapp.com", {
         method: "POST",
         headers: {
