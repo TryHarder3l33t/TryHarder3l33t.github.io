@@ -1,4 +1,5 @@
 <!--  emmet html:5 -->
+<!-- https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,30 +8,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/7efb34a456.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div>
-      <i class="fa fa-bars hamburger"></i>
-      <i class="fas fa-search"></i>
-      <a class="lang" href="/">U.S.</a>
-      <a class="lang" href="/">INTERNATIONAL</a>
-      <a class="lang" href="/">CANADA</a>
-      <a class="lang" href="/">ESPANOL</a>
-      <a class="lang crossword" href="/">PLAY THE CROSSWORD</a>
-      <a class="lang" href="/">ACCOUNT</a>
+    <div class="col-12">
+      <div class="col-4">
+        <i class="fa fa-bars hamburger"></i> <i class="fas fa-search"></i>
+      </div>
+      <div class="col-4 top-stuff">
+        <a class="lang" href="/">U.S.</a>
+        <a class="lang" href="/">INTERNATIONAL</a>
+        <a class="lang" href="/">CANADA</a>
+        <a class="lang" href="/">ESPANOL</a>
+      </div>
+      <div class="col-4 top-stuff">
+        <a class="lang crossword white" href="/">PLAY THE CROSSWORD</a>
+        <a class="lang" href="/">ACCOUNT</a>
+      </div>
     </div>
-    <div id="titleStuff">
-      <ul id="date-stuff">
-        <li><h5 id="today"></h5></li>
-        <li><p>Today's Paper</p></li>
-      </ul>
+    <div class="col-12 paddingtb0">
+      <div class="col-4 paddingtb0">
+        <ul id="date-stuff">
+          <li><h5 id="today"></h5></li>
+          <li><p>Today's Paper</p></li>
+        </ul>
+      </div>
+      <div>
+        <h1 class="col-6 mea-culpa no-margin paddingtb0">Fullstack Times</h1>
+      </div>
+    </div>
 
-      <h1>Fullstack Times</h1>
-    </div>
     <hr />
     <ul class="nav">
       <li>World</li>
@@ -53,11 +69,150 @@
       <li>Real Estate</li>
       <li>Video</li>
     </ul>
-    <hr />
-    <hr />
+    <hr class="hr-title nav" />
+    <hr class="hr-title nav" />
+    <div class="col-8">
+      <div class="col-5">
+        <h3>
+          Synagogue Hostages Spent Hours Plotting Strategy Before a Daring
+          Escape
+        </h3>
+        <ul>
+          <li>
+            <p>
+              As a gunman ranted at a Texas synagogue on Saturday, hostages
+              whispered strategies. After the rabbi threw a chair at their
+              captor, they ran for the exit.
+            </p>
+          </li>
+          <li>
+            <p>
+              Synagogues in the U.S. have paid increasing attention to security.
+              The rabbi in Texas, Charlie Cytron-Walker, said he had undergone
+              at least four trainings.
+            </p>
+          </li>
+        </ul>
+        <hr />
+        <h3>Texas Standoff Leads to Emotional Phone Call Between Brothers</h3>
+        <p>
+          The brother of a British man who took four hostages at a synagogue
+          described him as deeply troubled and worked with police to try to
+          “talk him down.”
+        </p>
+        <hr />
+        <h4>
+          Officials are investigating the attacker’s link to a 2010 terror case.
+        </h4>
+      </div>
+      <img class="col-7" src="https://i.redd.it/gwqntar4wtd11.png" />
+      <hr class="col-12" style="padding-top: 0px; padding-bottom: 0px" />
+      <div class="col-5">
+        <h3>
+          Synagogue Hostages Spent Hours Plotting Strategy Before a Daring
+          Escape
+        </h3>
+        <ul>
+          <li>
+            <p>
+              As a gunman ranted at a Texas synagogue on Saturday, hostages
+              whispered strategies. After the rabbi threw a chair at their
+              captor, they ran for the exit.
+            </p>
+          </li>
+          <li>
+            <p>
+              Synagogues in the U.S. have paid increasing attention to security.
+              The rabbi in Texas, Charlie Cytron-Walker, said he had undergone
+              at least four trainings.
+            </p>
+          </li>
+        </ul>
 
-    <h1>Hello My World</h1>
-    <img src="https://i.redd.it/gwqntar4wtd11.png" />
+        <hr />
+
+        <img
+          class="col-12"
+          src="https://miro.medium.com/max/1400/0*opPZgBaGgIga8Qyb"
+          alt=""
+        />
+        <h3>Texas Standoff Leads to Emotional Phone Call Between Brothers</h3>
+        <p>
+          The brother of a British man who took four hostages at a synagogue
+          described him as deeply troubled and worked with police to try to
+          “talk him down.”
+        </p>
+        <hr />
+        <h4>
+          Officials are investigating the attacker’s link to a 2010 terror case.
+        </h4>
+      </div>
+      <img
+        class="col-7"
+        src="https://crocoder.dev/static/00b1279f39a388504b781e7960c665cf/b80d6/map-filter-reduce.png"
+      />
+      <img
+        class="col-7"
+        src="https://miro.medium.com/max/1400/0*HFQNXD0TwBayxmVQ"
+        alt=""
+      />
+      <hr class="col-12" style="padding-top: 0px; padding-bottom: 0px" />
+    </div>
+
+    <div class="col-4">
+      <h3>
+        A Love of Trees or a Display of Power? The Odd Park of an Oligarch.
+      </h3>
+      <p>
+        A former prime minister says he has retired from Georgia’s politics, but
+        critics say he still wields power. What’s beyond dispute: his tree
+        obsession.
+      </p>
+      <img
+        class="col-12"
+        src="https://drtomcrick.files.wordpress.com/2012/12/10-types-of-people.gif"
+      />
+      <hr />
+      <h4>
+        Namibia’s Skeleton Coast is a strange and beautiful reminder that, in
+        the end, we are powerless against nature and time.
+      </h4>
+      <hr />
+      <h4>
+        Sjón’s novels, which other writers admire passionately, are
+        simultaneously tiny and huge, weird and normal, ancient and modern.
+      </h4>
+      <hr />
+      <h4 class="lil-margin-bottom">Opinion</h4>
+      <p class="no-margin lil-margin-bottom">LINDA GREENHOUSE</p>
+      <h3>What the Supreme Court’s Vaccine Case Was Really About</h3>
+      <hr />
+      <p class="no-margin lil-margin-bottom">TRESSIE MCMILLAN COTTOM</p>
+      <div class="col-12 paddinglr0">
+        <h3 class="col-6 paddinglr0">
+          The Real Roots of the Debate Over Schools During Covid
+        </h3>
+        <img
+          class="col-6 paddinglr0"
+          src="https://i.pinimg.com/originals/36/0b/a8/360ba8c74365d30c77e22e7a89b7c28d.jpg"
+        />
+      </div>
+
+      <hr />
+      <p class="no-margin lil-margin-bottom">GAIL COLLINS AND BRET STEPHENS</p>
+      <h3>What is Lorem Ipsum?</h3>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
   </body>
   <script>
     window.addEventListener("DOMContentLoaded", (event) => {
