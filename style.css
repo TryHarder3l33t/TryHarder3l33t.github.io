@@ -1,0 +1,210 @@
+/* Margins to make it resemble the NYTimes applied to entire document */
+body {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.mea-culpa {
+  font-family: "Mea Culpa", cursive;
+  font-size: 3.5em;
+}
+
+h5,
+h4,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* !impotant ovrides any style that was not going through  */
+.no-margin {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.lil-margin-top {
+  margin-top: 5px;
+}
+
+.lil-margin-bottom {
+  margin-bottom: 5px;
+}
+.hr-title {
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.nav {
+  padding-left: 0;
+  justify-content: space-around;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paddingtb0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.paddinglr0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+ul {
+  padding: 0;
+}
+
+.nav li,
+div a {
+  margin: 2px;
+}
+
+.crossword {
+  border-radius: 3px;
+  background-color: dodgerblue;
+  padding: 11px;
+}
+
+.lang {
+  text-decoration: none;
+}
+
+#date-stuff li {
+  list-style-type: none;
+}
+#today {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#titleStuff {
+  display: flex;
+}
+
+.white {
+  color: white;
+}
+/* @media is a way to apple styles based on viewport width */
+/* Keep Media At The Bottom */
+/* Collapse is used versus hidden since collapse makes the height width zero versus hidden which just hides it and leaves the space */
+@media (max-width: 600px) {
+  .nav {
+    visibility: collapse;
+  }
+}
+
+@media (max-width: 1450px) {
+  .top-stuff {
+    visibility: collapse;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+/* This is here because float takes things out of the flow, clear means it pushes both lefft and floated right stuff under. I didnt use row since all my columns are floating n a div :( bad example but I left it because it is there if I need it*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+/* Any class that has column in it float it left. Class is class * is a all wildcard and col is any class that has col- in it */
+/* For mobile phones: Under 600px */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Apply the smaller body margin until the width is 800px */
+@media only screen and (max-width: 800px) {
+  body {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+/* Once the view is 600px apply this */
+/* This stuff below sets the with of the element based on percentages. It divides the screen into 12 columns. For instance you can have a button that is the first child in a div so it can occupy 33% of the screen you put it in a col-4 this is the small column stuff but the same concept. Now the rest of the screen has 8 columns left to play with. My layout is 8 columns and 4 columns. I also divided the 8 column one the same way. Once I was in an 8 column parent I could divide it in half with a col-6 */
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+/* @media only screen and (min-width: 768px) { */
+/* The column stuff. I used it since it was easier to make a responsive display vs flexbox. I did use some flexbox but very little. */
+@media only screen and (min-width: 900px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
